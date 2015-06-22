@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6CC134C1B382A7800D1BF00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC134B1B382A7800D1BF00 /* AppDelegate.swift */; };
+		D6CC134E1B382A7800D1BF00 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6CC134D1B382A7800D1BF00 /* GameScene.sks */; };
+		D6CC13501B382A7800D1BF00 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC134F1B382A7800D1BF00 /* GameScene.swift */; };
+		D6CC13521B382A7800D1BF00 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC13511B382A7800D1BF00 /* GameViewController.swift */; };
+		D6CC13551B382A7800D1BF00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13531B382A7800D1BF00 /* Main.storyboard */; };
+		D6CC13571B382A7800D1BF00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13561B382A7800D1BF00 /* Images.xcassets */; };
+		D6CC135A1B382A7800D1BF00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13581B382A7800D1BF00 /* LaunchScreen.xib */; };
+		D6CC13661B382A7800D1BF00 /* TouchShootingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6CC13601B382A7800D1BF00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6CC133E1B382A7800D1BF00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6CC13451B382A7800D1BF00;
+			remoteInfo = TouchShooting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6CC13461B382A7800D1BF00 /* TouchShooting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchShooting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CC134A1B382A7800D1BF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CC134B1B382A7800D1BF00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6CC134D1B382A7800D1BF00 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D6CC134F1B382A7800D1BF00 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D6CC13511B382A7800D1BF00 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D6CC13541B382A7800D1BF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6CC13561B382A7800D1BF00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6CC13591B382A7800D1BF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D6CC135F1B382A7800D1BF00 /* TouchShootingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchShootingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CC13641B382A7800D1BF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchShootingTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6CC13431B382A7800D1BF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CC135C1B382A7800D1BF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6CC133D1B382A7800D1BF00 = {
+			isa = PBXGroup;
+			children = (
+				D6CC13481B382A7800D1BF00 /* TouchShooting */,
+				D6CC13621B382A7800D1BF00 /* TouchShootingTests */,
+				D6CC13471B382A7800D1BF00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6CC13471B382A7800D1BF00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC13461B382A7800D1BF00 /* TouchShooting.app */,
+				D6CC135F1B382A7800D1BF00 /* TouchShootingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6CC13481B382A7800D1BF00 /* TouchShooting */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC134B1B382A7800D1BF00 /* AppDelegate.swift */,
+				D6CC134D1B382A7800D1BF00 /* GameScene.sks */,
+				D6CC134F1B382A7800D1BF00 /* GameScene.swift */,
+				D6CC13511B382A7800D1BF00 /* GameViewController.swift */,
+				D6CC13531B382A7800D1BF00 /* Main.storyboard */,
+				D6CC13561B382A7800D1BF00 /* Images.xcassets */,
+				D6CC13581B382A7800D1BF00 /* LaunchScreen.xib */,
+				D6CC13491B382A7800D1BF00 /* Supporting Files */,
+			);
+			path = TouchShooting;
+			sourceTree = "<group>";
+		};
+		D6CC13491B382A7800D1BF00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC134A1B382A7800D1BF00 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6CC13621B382A7800D1BF00 /* TouchShootingTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */,
+				D6CC13631B382A7800D1BF00 /* Supporting Files */,
+			);
+			path = TouchShootingTests;
+			sourceTree = "<group>";
+		};
+		D6CC13631B382A7800D1BF00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC13641B382A7800D1BF00 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6CC13451B382A7800D1BF00 /* TouchShooting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6CC13691B382A7800D1BF00 /* Build configuration list for PBXNativeTarget "TouchShooting" */;
+			buildPhases = (
+				D6CC13421B382A7800D1BF00 /* Sources */,
+				D6CC13431B382A7800D1BF00 /* Frameworks */,
+				D6CC13441B382A7800D1BF00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchShooting;
+			productName = TouchShooting;
+			productReference = D6CC13461B382A7800D1BF00 /* TouchShooting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6CC135E1B382A7800D1BF00 /* TouchShootingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6CC136C1B382A7800D1BF00 /* Build configuration list for PBXNativeTarget "TouchShootingTests" */;
+			buildPhases = (
+				D6CC135B1B382A7800D1BF00 /* Sources */,
+				D6CC135C1B382A7800D1BF00 /* Frameworks */,
+				D6CC135D1B382A7800D1BF00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6CC13611B382A7800D1BF00 /* PBXTargetDependency */,
+			);
+			name = TouchShootingTests;
+			productName = TouchShootingTests;
+			productReference = D6CC135F1B382A7800D1BF00 /* TouchShootingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6CC133E1B382A7800D1BF00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Yaruki00;
+				TargetAttributes = {
+					D6CC13451B382A7800D1BF00 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D6CC135E1B382A7800D1BF00 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D6CC13451B382A7800D1BF00;
+					};
+				};
+			};
+			buildConfigurationList = D6CC13411B382A7800D1BF00 /* Build configuration list for PBXProject "TouchShooting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6CC133D1B382A7800D1BF00;
+			productRefGroup = D6CC13471B382A7800D1BF00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6CC13451B382A7800D1BF00 /* TouchShooting */,
+				D6CC135E1B382A7800D1BF00 /* TouchShootingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6CC13441B382A7800D1BF00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CC135A1B382A7800D1BF00 /* LaunchScreen.xib in Resources */,
+				D6CC13571B382A7800D1BF00 /* Images.xcassets in Resources */,
+				D6CC134E1B382A7800D1BF00 /* GameScene.sks in Resources */,
+				D6CC13551B382A7800D1BF00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CC135D1B382A7800D1BF00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6CC13421B382A7800D1BF00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CC13501B382A7800D1BF00 /* GameScene.swift in Sources */,
+				D6CC13521B382A7800D1BF00 /* GameViewController.swift in Sources */,
+				D6CC134C1B382A7800D1BF00 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CC135B1B382A7800D1BF00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CC13661B382A7800D1BF00 /* TouchShootingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6CC13611B382A7800D1BF00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6CC13451B382A7800D1BF00 /* TouchShooting */;
+			targetProxy = D6CC13601B382A7800D1BF00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6CC13531B382A7800D1BF00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6CC13541B382A7800D1BF00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6CC13581B382A7800D1BF00 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6CC13591B382A7800D1BF00 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6CC13671B382A7800D1BF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6CC13681B382A7800D1BF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6CC136A1B382A7800D1BF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TouchShooting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D6CC136B1B382A7800D1BF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TouchShooting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D6CC136D1B382A7800D1BF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TouchShootingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchShooting.app/TouchShooting";
+			};
+			name = Debug;
+		};
+		D6CC136E1B382A7800D1BF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TouchShootingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchShooting.app/TouchShooting";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6CC13411B382A7800D1BF00 /* Build configuration list for PBXProject "TouchShooting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CC13671B382A7800D1BF00 /* Debug */,
+				D6CC13681B382A7800D1BF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6CC13691B382A7800D1BF00 /* Build configuration list for PBXNativeTarget "TouchShooting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CC136A1B382A7800D1BF00 /* Debug */,
+				D6CC136B1B382A7800D1BF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D6CC136C1B382A7800D1BF00 /* Build configuration list for PBXNativeTarget "TouchShootingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CC136D1B382A7800D1BF00 /* Debug */,
+				D6CC136E1B382A7800D1BF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6CC133E1B382A7800D1BF00 /* Project object */;
+}
