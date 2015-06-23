@@ -44,8 +44,8 @@
 		D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchShootingTests.swift; sourceTree = "<group>"; };
 		D6CC136F1B38316200D1BF00 /* StartGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameScene.swift; sourceTree = "<group>"; };
 		D6CC13711B396AB100D1BF00 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		D6CC13731B39728B00D1BF00 /* player1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = player1; sourceTree = "<group>"; };
-		D6CC13751B39729E00D1BF00 /* player2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = player2; path = ../player2; sourceTree = "<group>"; };
+		D6CC13731B39728B00D1BF00 /* player1 */ = {isa = PBXFileReference; lastKnownFileType = file; name = player1; path = /Users/Yuta/Development/TouchShooting/TouchShooting/images/player1; sourceTree = "<absolute>"; };
+		D6CC13751B39729E00D1BF00 /* player2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = player2; path = images/player2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
