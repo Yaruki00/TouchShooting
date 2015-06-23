@@ -15,6 +15,9 @@
 		D6CC135A1B382A7800D1BF00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13581B382A7800D1BF00 /* LaunchScreen.xib */; };
 		D6CC13661B382A7800D1BF00 /* TouchShootingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */; };
 		D6CC13701B38316200D1BF00 /* StartGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC136F1B38316200D1BF00 /* StartGameScene.swift */; };
+		D6CC13721B396AB100D1BF00 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC13711B396AB100D1BF00 /* Player.swift */; };
+		D6CC13741B39728B00D1BF00 /* player1 in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13731B39728B00D1BF00 /* player1 */; };
+		D6CC13761B39729E00D1BF00 /* player2 in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13751B39729E00D1BF00 /* player2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		D6CC13641B382A7800D1BF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchShootingTests.swift; sourceTree = "<group>"; };
 		D6CC136F1B38316200D1BF00 /* StartGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameScene.swift; sourceTree = "<group>"; };
+		D6CC13711B396AB100D1BF00 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D6CC13731B39728B00D1BF00 /* player1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = player1; sourceTree = "<group>"; };
+		D6CC13751B39729E00D1BF00 /* player2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = player2; path = ../player2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		D6CC13481B382A7800D1BF00 /* TouchShooting */ = {
 			isa = PBXGroup;
 			children = (
+				D6CC13711B396AB100D1BF00 /* Player.swift */,
 				D6CC134B1B382A7800D1BF00 /* AppDelegate.swift */,
 				D6CC134F1B382A7800D1BF00 /* GameScene.swift */,
 				D6CC13511B382A7800D1BF00 /* GameViewController.swift */,
@@ -88,6 +95,7 @@
 				D6CC13531B382A7800D1BF00 /* Main.storyboard */,
 				D6CC13561B382A7800D1BF00 /* Images.xcassets */,
 				D6CC13581B382A7800D1BF00 /* LaunchScreen.xib */,
+				D6CC13771B39731800D1BF00 /* images */,
 				D6CC13491B382A7800D1BF00 /* Supporting Files */,
 			);
 			path = TouchShooting;
@@ -116,6 +124,15 @@
 				D6CC13641B382A7800D1BF00 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6CC13771B39731800D1BF00 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC13731B39728B00D1BF00 /* player1 */,
+				D6CC13751B39729E00D1BF00 /* player2 */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6CC135A1B382A7800D1BF00 /* LaunchScreen.xib in Resources */,
+				D6CC13741B39728B00D1BF00 /* player1 in Resources */,
 				D6CC13571B382A7800D1BF00 /* Images.xcassets in Resources */,
 				D6CC13551B382A7800D1BF00 /* Main.storyboard in Resources */,
+				D6CC13761B39729E00D1BF00 /* player2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +240,7 @@
 				D6CC13501B382A7800D1BF00 /* GameScene.swift in Sources */,
 				D6CC13701B38316200D1BF00 /* StartGameScene.swift in Sources */,
 				D6CC13521B382A7800D1BF00 /* GameViewController.swift in Sources */,
+				D6CC13721B396AB100D1BF00 /* Player.swift in Sources */,
 				D6CC134C1B382A7800D1BF00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
