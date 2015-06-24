@@ -23,7 +23,9 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        // TODO: shot
+        let touch = touches.first as! UITouch
+        let touchLocation = touch.locationInNode(self)
+        player.fireBullet(self, target: touchLocation)
     }
     
     

@@ -16,8 +16,12 @@
 		D6CC13661B382A7800D1BF00 /* TouchShootingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */; };
 		D6CC13701B38316200D1BF00 /* StartGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC136F1B38316200D1BF00 /* StartGameScene.swift */; };
 		D6CC13721B396AB100D1BF00 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC13711B396AB100D1BF00 /* Player.swift */; };
-		D6CC13741B39728B00D1BF00 /* player1 in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13731B39728B00D1BF00 /* player1 */; };
-		D6CC13761B39729E00D1BF00 /* player2 in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13751B39729E00D1BF00 /* player2 */; };
+		D6CC13741B39728B00D1BF00 /* player1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13731B39728B00D1BF00 /* player1.gif */; };
+		D6CC13761B39729E00D1BF00 /* player2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13751B39729E00D1BF00 /* player2.gif */; };
+		D6CC13791B3AD75300D1BF00 /* playerBullet.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13781B3AD75300D1BF00 /* playerBullet.gif */; };
+		D6CC137B1B3AD85500D1BF00 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC137A1B3AD85500D1BF00 /* Bullet.swift */; };
+		D6CC137D1B3AD9DA00D1BF00 /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC137C1B3AD9DA00D1BF00 /* PlayerBullet.swift */; };
+		D6CC13801B3AE19600D1BF00 /* playerBullet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6CC137F1B3AE19600D1BF00 /* playerBullet.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +48,12 @@
 		D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchShootingTests.swift; sourceTree = "<group>"; };
 		D6CC136F1B38316200D1BF00 /* StartGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameScene.swift; sourceTree = "<group>"; };
 		D6CC13711B396AB100D1BF00 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		D6CC13731B39728B00D1BF00 /* player1 */ = {isa = PBXFileReference; lastKnownFileType = file; name = player1; path = /Users/Yuta/Development/TouchShooting/TouchShooting/images/player1; sourceTree = "<absolute>"; };
-		D6CC13751B39729E00D1BF00 /* player2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = player2; path = images/player2; sourceTree = "<group>"; };
+		D6CC13731B39728B00D1BF00 /* player1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = player1.gif; path = images/player1.gif; sourceTree = "<group>"; };
+		D6CC13751B39729E00D1BF00 /* player2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = player2.gif; path = images/player2.gif; sourceTree = "<group>"; };
+		D6CC13781B3AD75300D1BF00 /* playerBullet.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = playerBullet.gif; path = images/playerBullet.gif; sourceTree = "<group>"; };
+		D6CC137A1B3AD85500D1BF00 /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
+		D6CC137C1B3AD9DA00D1BF00 /* PlayerBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerBullet.swift; sourceTree = "<group>"; };
+		D6CC137F1B3AE19600D1BF00 /* playerBullet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = playerBullet.mp3; path = sounds/playerBullet.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				D6CC13711B396AB100D1BF00 /* Player.swift */,
+				D6CC137A1B3AD85500D1BF00 /* Bullet.swift */,
+				D6CC137C1B3AD9DA00D1BF00 /* PlayerBullet.swift */,
 				D6CC134B1B382A7800D1BF00 /* AppDelegate.swift */,
 				D6CC134F1B382A7800D1BF00 /* GameScene.swift */,
 				D6CC13511B382A7800D1BF00 /* GameViewController.swift */,
@@ -96,6 +106,7 @@
 				D6CC13561B382A7800D1BF00 /* Images.xcassets */,
 				D6CC13581B382A7800D1BF00 /* LaunchScreen.xib */,
 				D6CC13771B39731800D1BF00 /* images */,
+				D6CC137E1B3AE17A00D1BF00 /* sounds */,
 				D6CC13491B382A7800D1BF00 /* Supporting Files */,
 			);
 			path = TouchShooting;
@@ -129,10 +140,19 @@
 		D6CC13771B39731800D1BF00 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				D6CC13731B39728B00D1BF00 /* player1 */,
-				D6CC13751B39729E00D1BF00 /* player2 */,
+				D6CC13731B39728B00D1BF00 /* player1.gif */,
+				D6CC13751B39729E00D1BF00 /* player2.gif */,
+				D6CC13781B3AD75300D1BF00 /* playerBullet.gif */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		D6CC137E1B3AE17A00D1BF00 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC137F1B3AE19600D1BF00 /* playerBullet.mp3 */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,11 +235,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CC13791B3AD75300D1BF00 /* playerBullet.gif in Resources */,
 				D6CC135A1B382A7800D1BF00 /* LaunchScreen.xib in Resources */,
-				D6CC13741B39728B00D1BF00 /* player1 in Resources */,
+				D6CC13741B39728B00D1BF00 /* player1.gif in Resources */,
 				D6CC13571B382A7800D1BF00 /* Images.xcassets in Resources */,
 				D6CC13551B382A7800D1BF00 /* Main.storyboard in Resources */,
-				D6CC13761B39729E00D1BF00 /* player2 in Resources */,
+				D6CC13801B3AE19600D1BF00 /* playerBullet.mp3 in Resources */,
+				D6CC13761B39729E00D1BF00 /* player2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +263,9 @@
 				D6CC13701B38316200D1BF00 /* StartGameScene.swift in Sources */,
 				D6CC13521B382A7800D1BF00 /* GameViewController.swift in Sources */,
 				D6CC13721B396AB100D1BF00 /* Player.swift in Sources */,
+				D6CC137D1B3AD9DA00D1BF00 /* PlayerBullet.swift in Sources */,
 				D6CC134C1B382A7800D1BF00 /* AppDelegate.swift in Sources */,
+				D6CC137B1B3AD85500D1BF00 /* Bullet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
