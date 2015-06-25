@@ -22,6 +22,9 @@
 		D6CC137B1B3AD85500D1BF00 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC137A1B3AD85500D1BF00 /* Bullet.swift */; };
 		D6CC137D1B3AD9DA00D1BF00 /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC137C1B3AD9DA00D1BF00 /* PlayerBullet.swift */; };
 		D6CC13801B3AE19600D1BF00 /* playerBullet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6CC137F1B3AE19600D1BF00 /* playerBullet.mp3 */; };
+		D6D2D2A71B3C0FC200877AD4 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2D2A61B3C0FC200877AD4 /* Enemy.swift */; };
+		D6D2D2A91B3C3EA900877AD4 /* enemyToRight.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6D2D2A81B3C3EA900877AD4 /* enemyToRight.gif */; };
+		D6D2D2AB1B3C3ED300877AD4 /* enemyToLeft.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6D2D2AA1B3C3ED300877AD4 /* enemyToLeft.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		D6CC137A1B3AD85500D1BF00 /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 		D6CC137C1B3AD9DA00D1BF00 /* PlayerBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerBullet.swift; sourceTree = "<group>"; };
 		D6CC137F1B3AE19600D1BF00 /* playerBullet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = playerBullet.mp3; path = sounds/playerBullet.mp3; sourceTree = "<group>"; };
+		D6D2D2A61B3C0FC200877AD4 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		D6D2D2A81B3C3EA900877AD4 /* enemyToRight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = enemyToRight.gif; path = images/enemyToRight.gif; sourceTree = "<group>"; };
+		D6D2D2AA1B3C3ED300877AD4 /* enemyToLeft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = enemyToLeft.gif; path = images/enemyToLeft.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D6CC13711B396AB100D1BF00 /* Player.swift */,
+				D6D2D2A61B3C0FC200877AD4 /* Enemy.swift */,
 				D6CC137A1B3AD85500D1BF00 /* Bullet.swift */,
 				D6CC137C1B3AD9DA00D1BF00 /* PlayerBullet.swift */,
 				D6CC134B1B382A7800D1BF00 /* AppDelegate.swift */,
@@ -143,6 +150,8 @@
 				D6CC13731B39728B00D1BF00 /* player1.gif */,
 				D6CC13751B39729E00D1BF00 /* player2.gif */,
 				D6CC13781B3AD75300D1BF00 /* playerBullet.gif */,
+				D6D2D2A81B3C3EA900877AD4 /* enemyToRight.gif */,
+				D6D2D2AA1B3C3ED300877AD4 /* enemyToLeft.gif */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -238,8 +247,10 @@
 				D6CC13791B3AD75300D1BF00 /* playerBullet.gif in Resources */,
 				D6CC135A1B382A7800D1BF00 /* LaunchScreen.xib in Resources */,
 				D6CC13741B39728B00D1BF00 /* player1.gif in Resources */,
+				D6D2D2AB1B3C3ED300877AD4 /* enemyToLeft.gif in Resources */,
 				D6CC13571B382A7800D1BF00 /* Images.xcassets in Resources */,
 				D6CC13551B382A7800D1BF00 /* Main.storyboard in Resources */,
+				D6D2D2A91B3C3EA900877AD4 /* enemyToRight.gif in Resources */,
 				D6CC13801B3AE19600D1BF00 /* playerBullet.mp3 in Resources */,
 				D6CC13761B39729E00D1BF00 /* player2.gif in Resources */,
 			);
@@ -263,6 +274,7 @@
 				D6CC13701B38316200D1BF00 /* StartGameScene.swift in Sources */,
 				D6CC13521B382A7800D1BF00 /* GameViewController.swift in Sources */,
 				D6CC13721B396AB100D1BF00 /* Player.swift in Sources */,
+				D6D2D2A71B3C0FC200877AD4 /* Enemy.swift in Sources */,
 				D6CC137D1B3AD9DA00D1BF00 /* PlayerBullet.swift in Sources */,
 				D6CC134C1B382A7800D1BF00 /* AppDelegate.swift in Sources */,
 				D6CC137B1B3AD85500D1BF00 /* Bullet.swift in Sources */,
@@ -461,6 +473,7 @@
 				D6CC136B1B382A7800D1BF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6CC136C1B382A7800D1BF00 /* Build configuration list for PBXNativeTarget "TouchShootingTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				D6CC136E1B382A7800D1BF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
