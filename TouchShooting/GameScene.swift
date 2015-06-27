@@ -20,23 +20,43 @@ struct PhisicsCategory {
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let player: Player = Player()
+    let maxEnemyNum = 20
+    var enemyDisappearCount = 0
+    var hit = 0
+    var shot = 0
+    let infoLabel = SKLabelNode(fontNamed: "Menlo-BoldItalic")
+    var finishFlag = false
     
     override func didMoveToView(view: SKView) {
         self.physicsWorld.gravity = CGVectorMake(0, 0)
         self.physicsWorld.contactDelegate = self
         backgroundColor = SKColor.blackColor()
         setupPlayer()
-        runAction(SKAction.repeatActionForever(
+        setupInfoLabel()
+        runAction(SKAction.repeatAction(
             SKAction.sequence([
                 SKAction.runBlock(addEnemy),
                 SKAction.waitForDuration(1.0)
-                ])
+                ]), count: maxEnemyNum
             ))
     }
     
     private func setupPlayer() {
         player.position = CGPoint(x: CGRectGetMidX(self.frame), y: player.size.height/2 + 10)
         addChild(player)
+    }
+    
+    func setupInfoLabel() {
+        setInfoLabelText()
+        self.infoLabel.fontSize = 12
+        self.infoLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.Left
+        self.infoLabel.fontColor = SKColor.grayColor()
+        self.infoLabel.position = CGPoint(x: 0, y: 0)
+        addChild(self.infoLabel)
+    }
+    
+    func setInfoLabelText() {
+        self.infoLabel.text = "Hit: " + self.hit.description + ", Shot :" + self.shot.description
     }
     
     func addEnemy() {
@@ -63,7 +83,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // enemy action
         let actionMove = SKAction.moveTo(CGPoint(x: endPointX, y: PointY), duration: NSTimeInterval(10.0))
         let actionMoveDone = SKAction.removeFromParent()
-        enemy.runAction(SKAction.sequence([actionMove, actionMoveDone]))
+        enemy.runAction(SKAction.sequence([actionMove, actionMoveDone]), completion: increaseEnemyDisappearCount)
     }
     
     func random(#min: CGFloat, max: CGFloat) -> CGFloat {
@@ -71,9 +91,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        let touch = touches.first as! UITouch
-        let touchLocation = touch.locationInNode(self)
-        player.fireBullet(self, target: touchLocation)
+        if (!self.finishFlag) {
+            let touch = touches.first as! UITouch
+            let touchLocation = touch.locationInNode(self)
+            player.fireBullet(self, target: touchLocation)
+            ++self.shot
+            setInfoLabelText()
+        }
     }
     
     
@@ -106,9 +130,37 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func playerBulletDidCollideWithEnemy(enemy: SKSpriteNode, playerBullet: SKSpriteNode) {
         runAction(SKAction.playSoundFileNamed("enemy.mp3", waitForCompletion: false))
-
         enemy.removeFromParent()
         playerBullet.removeFromParent()
+        ++hit
+        increaseEnemyDisappearCount()
+    }
+    
+    func increaseEnemyDisappearCount() {
+        ++self.enemyDisappearCount
+        setInfoLabelText()
+        if ( self.enemyDisappearCount >= self.maxEnemyNum ) {
+            runAction(SKAction.sequence([
+                SKAction.waitForDuration(1.0),
+                SKAction.runBlock({
+                    self.finishFlag = true
+                    let finishLabel = SKLabelNode(fontNamed: "Avenir-Heavy")
+                    finishLabel.text = "Finish"
+                    finishLabel.fontSize = 40
+                    finishLabel.fontColor = SKColor.redColor()
+                    finishLabel.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
+                    self.addChild(finishLabel)
+                }),
+                SKAction.waitForDuration(3.0),
+                SKAction.runBlock({
+                    let resultScene = ResultScene(size: self.size, hit: self.hit, shot: self.shot)
+                    resultScene.scaleMode = self.scaleMode
+                    let transitionType = SKTransition.doorwayWithDuration(2.0)
+                    self.view?.presentScene(resultScene, transition: transitionType)
+                })
+                ]))
+            
+        }
     }
     
 }
