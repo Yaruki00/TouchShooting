@@ -8,7 +8,7 @@
 ----
 ## ルール
 
-![play demo](https://github.com/Yaruki00/TouchShooting/raw/master/play.png)
+![play demo](https://raw.githubusercontent.com/Yaruki00/TouchShooting/master/game.png)
 
 画面をタップするとその方向にケーキが飛びます。  
 ケーキが猫に当たると1匹5点。  
