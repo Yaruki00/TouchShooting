@@ -13,6 +13,12 @@ class PlayerBullet: Bullet {
    
     override init(imageName: String, bulletSound: String?) {
         super.init(imageName: imageName, bulletSound: bulletSound)
+        self.physicsBody = SKPhysicsBody(texture: self.texture, size: self.size)
+        self.physicsBody?.dynamic = true
+        self.physicsBody?.usesPreciseCollisionDetection = true
+        self.physicsBody?.categoryBitMask = PhisicsCategory.PlayerBullet
+        self.physicsBody?.contactTestBitMask = PhisicsCategory.Enemy
+        self.physicsBody?.collisionBitMask = PhisicsCategory.None
     }
     
     required init?(coder aDecoder: NSCoder) {

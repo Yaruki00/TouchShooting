@@ -16,6 +16,12 @@ class Player: SKSpriteNode {
     init() {
         let texture = SKTexture(imageNamed: "player1.gif")
         super.init(texture: texture, color: SKColor.clearColor(), size: CGSize(width: texture.size().width/2, height: texture.size().height/2))
+        self.physicsBody = SKPhysicsBody(texture: self.texture, size: self.size)
+        self.physicsBody?.dynamic = true
+        self.physicsBody?.usesPreciseCollisionDetection = false
+        self.physicsBody?.categoryBitMask = PhisicsCategory.Player
+        self.physicsBody?.contactTestBitMask = PhisicsCategory.Enemy |  PhisicsCategory.EnemyBullet
+        self.physicsBody?.collisionBitMask = PhisicsCategory.None
         animate()
     }
     

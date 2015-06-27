@@ -25,6 +25,8 @@
 		D6D2D2A71B3C0FC200877AD4 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2D2A61B3C0FC200877AD4 /* Enemy.swift */; };
 		D6D2D2A91B3C3EA900877AD4 /* enemyToRight.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6D2D2A81B3C3EA900877AD4 /* enemyToRight.gif */; };
 		D6D2D2AB1B3C3ED300877AD4 /* enemyToLeft.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6D2D2AA1B3C3ED300877AD4 /* enemyToLeft.gif */; };
+		D6D2D2AD1B3DA2B300877AD4 /* enemy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D6D2D2AC1B3DA2B300877AD4 /* enemy.mp3 */; };
+		D6D2D2AF1B3EBD4100877AD4 /* ResultScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2D2AE1B3EBD4100877AD4 /* ResultScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		D6D2D2A61B3C0FC200877AD4 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		D6D2D2A81B3C3EA900877AD4 /* enemyToRight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = enemyToRight.gif; path = images/enemyToRight.gif; sourceTree = "<group>"; };
 		D6D2D2AA1B3C3ED300877AD4 /* enemyToLeft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = enemyToLeft.gif; path = images/enemyToLeft.gif; sourceTree = "<group>"; };
+		D6D2D2AC1B3DA2B300877AD4 /* enemy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = enemy.mp3; path = sounds/enemy.mp3; sourceTree = "<group>"; };
+		D6D2D2AE1B3EBD4100877AD4 /* ResultScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				D6CC137C1B3AD9DA00D1BF00 /* PlayerBullet.swift */,
 				D6CC134B1B382A7800D1BF00 /* AppDelegate.swift */,
 				D6CC134F1B382A7800D1BF00 /* GameScene.swift */,
+				D6D2D2AE1B3EBD4100877AD4 /* ResultScene.swift */,
 				D6CC13511B382A7800D1BF00 /* GameViewController.swift */,
 				D6CC136F1B38316200D1BF00 /* StartGameScene.swift */,
 				D6CC13531B382A7800D1BF00 /* Main.storyboard */,
@@ -160,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				D6CC137F1B3AE19600D1BF00 /* playerBullet.mp3 */,
+				D6D2D2AC1B3DA2B300877AD4 /* enemy.mp3 */,
 			);
 			name = sounds;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				D6CC13571B382A7800D1BF00 /* Images.xcassets in Resources */,
 				D6CC13551B382A7800D1BF00 /* Main.storyboard in Resources */,
 				D6D2D2A91B3C3EA900877AD4 /* enemyToRight.gif in Resources */,
+				D6D2D2AD1B3DA2B300877AD4 /* enemy.mp3 in Resources */,
 				D6CC13801B3AE19600D1BF00 /* playerBullet.mp3 in Resources */,
 				D6CC13761B39729E00D1BF00 /* player2.gif in Resources */,
 			);
@@ -274,6 +281,7 @@
 				D6CC13701B38316200D1BF00 /* StartGameScene.swift in Sources */,
 				D6CC13521B382A7800D1BF00 /* GameViewController.swift in Sources */,
 				D6CC13721B396AB100D1BF00 /* Player.swift in Sources */,
+				D6D2D2AF1B3EBD4100877AD4 /* ResultScene.swift in Sources */,
 				D6D2D2A71B3C0FC200877AD4 /* Enemy.swift in Sources */,
 				D6CC137D1B3AD9DA00D1BF00 /* PlayerBullet.swift in Sources */,
 				D6CC134C1B382A7800D1BF00 /* AppDelegate.swift in Sources */,

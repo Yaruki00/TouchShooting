@@ -8,11 +8,22 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+struct PhisicsCategory {
+    static let None        : UInt32 = 0
+    static let All         : UInt32 = UInt32.max
+    static let Player      : UInt32 = 0x1 << 0
+    static let Enemy       : UInt32 = 0x1 << 1
+    static let PlayerBullet: UInt32 = 0x1 << 2
+    static let EnemyBullet : UInt32 = 0x1 << 3
+}
+
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let player: Player = Player()
     
     override func didMoveToView(view: SKView) {
+        self.physicsWorld.gravity = CGVectorMake(0, 0)
+        self.physicsWorld.contactDelegate = self
         backgroundColor = SKColor.blackColor()
         setupPlayer()
         runAction(SKAction.repeatActionForever(
@@ -68,6 +79,36 @@ class GameScene: SKScene {
     
     override func update(currentTime: NSTimeInterval) {
         // TODO: render
+    }
+    
+    func didBeginContact(contact: SKPhysicsContact) {
+        
+        var firstBody: SKPhysicsBody!
+        var secondBody: SKPhysicsBody!
+        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
+            firstBody = contact.bodyA
+            secondBody = contact.bodyB
+        }
+        else {
+            firstBody = contact.bodyB
+            secondBody = contact.bodyA
+        }
+        
+        if ((firstBody.categoryBitMask & PhisicsCategory.Enemy != 0) &&
+            (secondBody.categoryBitMask & PhisicsCategory.PlayerBullet != 0)) {
+                if (contact.bodyA.node?.parent == nil || contact.bodyB.node?.parent == nil) {
+                    return
+                }
+                playerBulletDidCollideWithEnemy(firstBody.node as! SKSpriteNode, playerBullet: secondBody.node as! SKSpriteNode)
+        }
+        
+    }
+    
+    func playerBulletDidCollideWithEnemy(enemy: SKSpriteNode, playerBullet: SKSpriteNode) {
+        runAction(SKAction.playSoundFileNamed("enemy.mp3", waitForCompletion: false))
+
+        enemy.removeFromParent()
+        playerBullet.removeFromParent()
     }
     
 }
