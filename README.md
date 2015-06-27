@@ -6,6 +6,16 @@
 猫かわいいよ、猫
 
 ----
+## ルール
+
+![play demo](https://github.com/Yaruki00/TouchShooting/raw/master/play.png)
+
+画面をタップするとその方向にケーキが飛びます。  
+ケーキが猫に当たると1匹5点。  
+ミスショットは-1点です。  
+猫は全部で20匹出現するので、最高100点です。  
+
+----
 ## 素材  
 http://neko.moo.jp/BS/  
 かわいい猫さん  

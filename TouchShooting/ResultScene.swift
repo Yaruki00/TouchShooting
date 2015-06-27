@@ -42,7 +42,7 @@ class ResultScene: SKScene {
         infoLabel.position = CGPoint(x: size.width/2, y: size.height/5*3)
         // score label
         let scoreLabel = SKLabelNode(fontNamed: "Thonburi-Bold")
-        scoreLabel.text = "Score: " + (self.hit * 3 - (self.shot - self.hit) ).description
+        scoreLabel.text = "Score: " + (self.hit * 5 - (self.shot - self.hit) ).description
         scoreLabel.fontSize = 30
         scoreLabel.fontColor = SKColor.redColor()
         scoreLabel.position = CGPoint(x: size.width/2, y: size.height/5*2)
