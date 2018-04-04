@@ -13,7 +13,6 @@
 		D6CC13551B382A7800D1BF00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13531B382A7800D1BF00 /* Main.storyboard */; };
 		D6CC13571B382A7800D1BF00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13561B382A7800D1BF00 /* Images.xcassets */; };
 		D6CC135A1B382A7800D1BF00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13581B382A7800D1BF00 /* LaunchScreen.xib */; };
-		D6CC13661B382A7800D1BF00 /* TouchShootingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */; };
 		D6CC13701B38316200D1BF00 /* StartGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC136F1B38316200D1BF00 /* StartGameScene.swift */; };
 		D6CC13721B396AB100D1BF00 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC13711B396AB100D1BF00 /* Player.swift */; };
 		D6CC13741B39728B00D1BF00 /* player1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6CC13731B39728B00D1BF00 /* player1.gif */; };
@@ -29,16 +28,6 @@
 		D6D2D2AF1B3EBD4100877AD4 /* ResultScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2D2AE1B3EBD4100877AD4 /* ResultScene.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D6CC13601B382A7800D1BF00 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D6CC133E1B382A7800D1BF00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D6CC13451B382A7800D1BF00;
-			remoteInfo = TouchShooting;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D6CC13461B382A7800D1BF00 /* TouchShooting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchShooting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CC134A1B382A7800D1BF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,9 +37,6 @@
 		D6CC13541B382A7800D1BF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6CC13561B382A7800D1BF00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D6CC13591B382A7800D1BF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D6CC135F1B382A7800D1BF00 /* TouchShootingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchShootingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6CC13641B382A7800D1BF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchShootingTests.swift; sourceTree = "<group>"; };
 		D6CC136F1B38316200D1BF00 /* StartGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameScene.swift; sourceTree = "<group>"; };
 		D6CC13711B396AB100D1BF00 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D6CC13731B39728B00D1BF00 /* player1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = player1.gif; path = images/player1.gif; sourceTree = "<group>"; };
@@ -74,13 +60,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CC135C1B382A7800D1BF00 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				D6CC13481B382A7800D1BF00 /* TouchShooting */,
-				D6CC13621B382A7800D1BF00 /* TouchShootingTests */,
 				D6CC13471B382A7800D1BF00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				D6CC13461B382A7800D1BF00 /* TouchShooting.app */,
-				D6CC135F1B382A7800D1BF00 /* TouchShootingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,23 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				D6CC134A1B382A7800D1BF00 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D6CC13621B382A7800D1BF00 /* TouchShootingTests */ = {
-			isa = PBXGroup;
-			children = (
-				D6CC13651B382A7800D1BF00 /* TouchShootingTests.swift */,
-				D6CC13631B382A7800D1BF00 /* Supporting Files */,
-			);
-			path = TouchShootingTests;
-			sourceTree = "<group>";
-		};
-		D6CC13631B382A7800D1BF00 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D6CC13641B382A7800D1BF00 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -190,24 +150,6 @@
 			productReference = D6CC13461B382A7800D1BF00 /* TouchShooting.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D6CC135E1B382A7800D1BF00 /* TouchShootingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D6CC136C1B382A7800D1BF00 /* Build configuration list for PBXNativeTarget "TouchShootingTests" */;
-			buildPhases = (
-				D6CC135B1B382A7800D1BF00 /* Sources */,
-				D6CC135C1B382A7800D1BF00 /* Frameworks */,
-				D6CC135D1B382A7800D1BF00 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D6CC13611B382A7800D1BF00 /* PBXTargetDependency */,
-			);
-			name = TouchShootingTests;
-			productName = TouchShootingTests;
-			productReference = D6CC135F1B382A7800D1BF00 /* TouchShootingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,10 +161,7 @@
 				TargetAttributes = {
 					D6CC13451B382A7800D1BF00 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					D6CC135E1B382A7800D1BF00 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = D6CC13451B382A7800D1BF00;
+						DevelopmentTeam = X5EF57U232;
 					};
 				};
 			};
@@ -240,7 +179,6 @@
 			projectRoot = "";
 			targets = (
 				D6CC13451B382A7800D1BF00 /* TouchShooting */,
-				D6CC135E1B382A7800D1BF00 /* TouchShootingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,13 +201,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CC135D1B382A7800D1BF00 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -289,23 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CC135B1B382A7800D1BF00 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D6CC13661B382A7800D1BF00 /* TouchShootingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D6CC13611B382A7800D1BF00 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D6CC13451B382A7800D1BF00 /* TouchShooting */;
-			targetProxy = D6CC13601B382A7800D1BF00 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D6CC13531B382A7800D1BF00 /* Main.storyboard */ = {
@@ -412,9 +327,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X5EF57U232;
 				INFOPLIST_FILE = TouchShooting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -422,43 +340,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X5EF57U232;
 				INFOPLIST_FILE = TouchShooting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D6CC136D1B382A7800D1BF00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TouchShootingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchShooting.app/TouchShooting";
-			};
-			name = Debug;
-		};
-		D6CC136E1B382A7800D1BF00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TouchShootingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchShooting.app/TouchShooting";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -479,15 +366,6 @@
 			buildConfigurations = (
 				D6CC136A1B382A7800D1BF00 /* Debug */,
 				D6CC136B1B382A7800D1BF00 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D6CC136C1B382A7800D1BF00 /* Build configuration list for PBXNativeTarget "TouchShootingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D6CC136D1B382A7800D1BF00 /* Debug */,
-				D6CC136E1B382A7800D1BF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

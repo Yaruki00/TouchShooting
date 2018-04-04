@@ -15,9 +15,9 @@ class Player: SKSpriteNode {
    
     init() {
         let texture = SKTexture(imageNamed: "player1.gif")
-        super.init(texture: texture, color: SKColor.clearColor(), size: CGSize(width: texture.size().width/2, height: texture.size().height/2))
-        self.physicsBody = SKPhysicsBody(texture: self.texture, size: self.size)
-        self.physicsBody?.dynamic = true
+        super.init(texture: texture, color: SKColor.clear, size: CGSize(width: texture.size().width/2, height: texture.size().height/2))
+        self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)
+        self.physicsBody?.isDynamic = true
         self.physicsBody?.usesPreciseCollisionDetection = false
         self.physicsBody?.categoryBitMask = PhisicsCategory.Player
         self.physicsBody?.contactTestBitMask = PhisicsCategory.Enemy |  PhisicsCategory.EnemyBullet
@@ -33,8 +33,8 @@ class Player: SKSpriteNode {
         var playerTextures:[SKTexture] = []
         for i in 1...2 {
             playerTextures.append(SKTexture(imageNamed: "player\(i).gif"))
-            let playerAnimation = SKAction.repeatActionForever(SKAction.animateWithTextures(playerTextures, timePerFrame: 1.0))
-            self.runAction(playerAnimation)
+            let playerAnimation = SKAction.repeatForever(SKAction.animate(with: playerTextures, timePerFrame: 1.0))
+            self.run(playerAnimation)
         }
     }
     
@@ -55,9 +55,9 @@ class Player: SKSpriteNode {
         distanceX = destination.x - bullet.position.x
         distanceY = destination.y - bullet.position.y
         let distance = sqrt(distanceX*distanceX + distanceY*distanceY)
-        let moveBulletAction = SKAction.moveTo(destination, duration: NSTimeInterval(distance/bulletSpeed))
+        let moveBulletAction = SKAction.move(to: destination, duration: TimeInterval(distance/bulletSpeed))
         let removeBulletAction = SKAction.removeFromParent()
-        bullet.runAction(SKAction.sequence([moveBulletAction, removeBulletAction]))
+        bullet.run(SKAction.sequence([moveBulletAction, removeBulletAction]))
     }
     
 }

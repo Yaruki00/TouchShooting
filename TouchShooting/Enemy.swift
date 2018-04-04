@@ -12,10 +12,10 @@ import SpriteKit
 class Enemy: SKSpriteNode {
    
     init(texture: SKTexture) {
-        super.init(texture: texture, color: SKColor.clearColor(), size: CGSize(width: texture.size().width/2, height: texture.size().height/2))
+        super.init(texture: texture, color: SKColor.clear, size: CGSize(width: texture.size().width/2, height: texture.size().height/2))
         self.name = "enemy"
-        self.physicsBody = SKPhysicsBody(texture: self.texture, size: self.size)
-        self.physicsBody?.dynamic = true
+        self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)
+        self.physicsBody?.isDynamic = true
         self.physicsBody?.usesPreciseCollisionDetection = false
         self.physicsBody?.categoryBitMask = PhisicsCategory.Enemy
         self.physicsBody?.contactTestBitMask = PhisicsCategory.Player |  PhisicsCategory.PlayerBullet
